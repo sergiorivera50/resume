@@ -1,0 +1,200 @@
+%-------------------------
+% Resume in Latex
+% Author : Sergio Rivera
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\newcommand{\bcomment}[1]{}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%----------CUSTOM COMMANDS----------
+% Items
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% Role headers
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Role sub-headers
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Project headers
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Bullets
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Item lists
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%==========RESUME CONTENT==========
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Sergio Rivera} \\ \vspace{1pt}
+    \href{mailto:sr2070@cantab.ac.uk}{\underline{sr2070@cantab.ac.uk}} $|$ 
+    \href{https://linkedin.com/in/sergioriveralopez}{\underline{linkedin.com/in/sergioriveralopez}} $|$
+    \href{https://github.com/sergiorivera50}{\underline{github.com/sergiorivera50}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Cambridge}{Cambridge, UK}
+      {MPhil in Advanced Computer Science (80.67/100, Distinction)}{Oct. 2023 -- Jun. 2024}
+    \resumeSubheading
+      {Swansea University}{Swansea, UK}
+      {BSc in Computer Science (83.86/100, First Class)}{Sep. 2019 -- May 2023}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \bcomment{
+        \resumeSubheading
+          {Universidad Pontificia de Comillas}{Madrid, ES}
+          {Machine Learning Lecturer}{Jan. 2026 -- Apr. 2026}
+          \resumeItemListStart
+            \resumeItem{Teaching the Geometric Deep Learning module in the Master's in Artificial Intelligence program (5 hours/week).}
+            \resumeItem{Leading course design and delivery covering Graph Neural Networks, spatial reasoning, and AI applications in geometric domains while maintaining full-time role at Deloitte.}
+          \resumeItemListEnd
+    }
+    
+    \resumeSubheading
+        {Deloitte}{Madrid, ES}
+        {Data Scientist}{Jun. 2024 -- Present}
+        \resumeItemListStart
+            \resumeItem{Led the development of one of Spain's largest ``next best offer" neural network models for a major food retailer, impacting 4.5M clients on a weekly basis, projected to generate €50M in incremental sales over the next three years}\resumeItem{Developed data-driven marketing attribution models for a global luxury goods conglomerate, delivering a drastically enhanced understanding of their sales conversion funnels}
+            \resumeItem{Delivered in-person technical presentations to cross-functional client stakeholders, effectively communicating complex AI solutions to technical teams, marketing departments, operational divisions, and business executives}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+ 
+    \resumeSubheading
+      {Cambridge Department of Computer Science}{Cambridge, UK}
+      {Graduate Researcher}{Oct. 2023 -- Jun. 2024}
+      \resumeItemListStart
+        \resumeItem{Conducted research on using generative ML models (GAN, VAE, Diffusion) to accelerate centralized optimal control problem planners for multi-drone trajectories with \href{https://www.cst.cam.ac.uk/people/asp45}{\underline{Prof Amanda Prorok}}, scoring an 85/100 grade on my MPhil thesis at Cambridge} \resumeItemListEnd
+
+    \resumeSubheading
+      {IBM}{Hursley, UK}
+      {Software Engineer}{Jun. 2021 -- Aug. 2022}
+      \resumeItemListStart
+        \resumeItem{Conducted NLP research on media bias detection by fine-tuning a BERT model using PyTorch to accurately identify abusive speech in news articles, scoring detection levels close to 80\% accuracy}
+        \resumeItem{Implemented a high-availability infrastructure Kubernetes cluster, centralizing logging from a network of several production servers, capturing over 1.4M logs weekly, leading to a 90\% reduction in search times for critical-level messages}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Statistical Arbitrage between Highly Cointegrated ETF Pairs}}{\emph{Feb. 2025}}
+          \resumeItemListStart
+            \resumeItem{Backtested mean-reversion trading strategies generating long/short signals for a derived spread instrument}
+            \resumeItem{Performed the Engle-Granger two-step method for cointegration to statistically validate the mean-reversion assumption, leading to the selection of 10 American ETF pairs}
+            \resumeItem{Analyzed the normality of my strategy’s returns using the Shapiro-Wilk, D'Agostino-Pearson, and Jarque-Bera tests, verifying core assumptions to accurately interpret Sharpe and Calmar ratios}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Device-Friendly Privacy-Preserving Generative Adversarial Networks}}{\emph{Jan. 2024}}
+          \resumeItemListStart
+            \resumeItem{Developed a novel compression framework for privacy-preserving generative adversarial networks (GANs), achieving 63.6\% memory reduction and 49.8\% reduction in floating-point operations while maintaining generation quality}
+            \resumeItem{Implemented model distillation, channel pruning, and weight quantization techniques using PyTorch to create resource-efficient models compatible with edge devices}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Software Engineering}{: Python, C++, SQL, Docker, Kubernetes, Git, FastAPI, BigQuery, Google Cloud, JavaScript} \\
+     \textbf{AI/ML Libraries}{: PyTorch, TensorFlow, Scikit-Learn, XGBoost, NumPy, Pandas, SciPy, Matplotlib, Polars, SHAP} \\
+     \textbf{Spoken Languages}{: Spanish (native), English (bilingual)} \\
+    }}
+ \end{itemize}
+\end{document}
